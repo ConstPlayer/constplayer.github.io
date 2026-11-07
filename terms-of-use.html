@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Termos de Uso do Const Player</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfbfd;
+    --surface: #f2f4fa;
+    --border: #dfe3ee;
+    --fg: #1c1e26;
+    --subtle: #565b6b;
+    --accent: #2f6bff;
+    --accent-fg: #ffffff;
+    --code-bg: #e8ecf7;
+    --code-fg: #263159;
+    --mark-bg: #fff1b8;
+    --mark-fg: #4a3a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14151b;
+      --surface: #1b1d26;
+      --border: #2b2e3b;
+      --fg: #eceef4;
+      --subtle: #a4a9ba;
+      --accent: #7ea2ff;
+      --accent-fg: #10131c;
+      --code-bg: #232739;
+      --code-fg: #c3cdf5;
+      --mark-bg: #4a3d0c;
+      --mark-fg: #ffe9a3;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14151b;
+    --surface: #1b1d26;
+    --border: #2b2e3b;
+    --fg: #eceef4;
+    --subtle: #a4a9ba;
+    --accent: #7ea2ff;
+    --accent-fg: #10131c;
+    --code-bg: #232739;
+    --code-fg: #c3cdf5;
+    --mark-bg: #4a3d0c;
+    --mark-fg: #ffe9a3;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding-block: 56px 96px;
+    padding-left: max(24px, env(safe-area-inset-left, 0px));
+    padding-right: max(24px, env(safe-area-inset-right, 0px));
+  }
+
+  .eyebrow {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 8px;
+  }
+
+  .updated {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    color: var(--subtle);
+    font-size: 13px;
+    margin: 0 0 32px;
+  }
+
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    font-size: 16px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .summary svg {
+    flex: none;
+    width: 22px;
+    height: 22px;
+    margin-top: 3px;
+    color: var(--accent);
+  }
+
+  h2 {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--subtle);
+    margin: 44px 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p { margin: 0 0 14px; }
+
+  ul {
+    margin: 0 0 14px;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  li::marker { color: var(--accent); }
+
+  strong { font-weight: 600; }
+
+  a { color: var(--accent); }
+
+  code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.85em;
+    background: var(--code-bg);
+    color: var(--code-fg);
+    padding: 0.12em 0.4em;
+    border-radius: 5px;
+  }
+
+  /* O que ainda falta preencher antes de publicar. */
+  mark {
+    background: var(--mark-bg);
+    color: var(--mark-fg);
+    padding: 0.05em 0.3em;
+    border-radius: 4px;
+  }
+
+  .contact {
+    margin-top: 48px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+  }
+  .contact h2 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+  .contact a {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .contact a:hover { text-decoration: underline; }
+</style>
+
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">Const Player</p>
+  <h1>Termos de Uso</h1>
+  <p class="updated">Última atualização: 4 de novembro de 2026</p>
+
+  <div class="summary">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6"/><path d="M9 13h6M9 17h6"/></svg>
+    <p style="margin:0">
+      Resumindo: o Const Player toca as músicas e os vídeos que já estão no seu
+      celular. A versão grátis tem anúncios; o Premium é uma compra única pela
+      Google Play, sem assinatura. Ao usar o app, você concorda com estes termos
+      e com a <a href="privacy-policy.html">Política de Privacidade</a>. Até a versão
+      2.5, o app não tem anúncios nem compras: as partes sobre anúncios,
+      Premium e Premium Lite valem a partir da versão 2.6.0.
+    </p>
+  </div>
+
+  <h2>1. Aceitação</h2>
+  <p>
+    Estes termos valem entre você e o desenvolvedor do Const Player, pessoa
+    física identificada como desenvolvedor na página do app na Google Play. Ao
+    instalar ou usar o app, você
+    concorda com eles. Se não concordar, não use o app. A Política de
+    Privacidade faz parte destes termos.
+  </p>
+
+  <h2>2. O que é o app</h2>
+  <p>
+    O Const Player é um tocador de áudio e vídeo que funciona com os arquivos
+    que já estão no seu aparelho. Ele não fornece, não vende e não hospeda
+    músicas nem vídeos.
+  </p>
+
+  <h2>3. Seus arquivos e direitos autorais</h2>
+  <ul>
+    <li>Você é responsável por ter o direito de usar os arquivos que toca,
+      transforma (por exemplo, ao virar um vídeo em música) ou edita (capas,
+      letras, nomes).</li>
+    <li>Virar vídeo em música é um recurso para uso pessoal. Não use o app para
+      desrespeitar direitos de terceiros.</li>
+    <li>O app só apaga arquivos quando você pede, e o Android pede a sua
+      confirmação antes. Mantenha cópias do que é importante para você.</li>
+  </ul>
+
+  <h2>4. Licença de uso</h2>
+  <p>
+    Você recebe uma licença pessoal, gratuita, não exclusiva e intransferível
+    para usar o app nos seus aparelhos. O app, o nome, o logo, o visual e o
+    código pertencem ao desenvolvedor. Não é permitido:
+  </p>
+  <ul>
+    <li>copiar, modificar, descompilar ou redistribuir o app;</li>
+    <li>usar versões modificadas ou burlar os anúncios, o Premium, o Premium
+      Lite ou o teste grátis;</li>
+    <li>usar o app para qualquer finalidade ilegal.</li>
+  </ul>
+
+  <h2>5. Versão grátis e anúncios</h2>
+  <p>
+    A versão grátis é mantida pelos anúncios do Google AdMob. Os anúncios são de
+    terceiros: não endossamos os produtos e serviços anunciados e não
+    respondemos por eles. Ao tocar num anúncio, você sai do app e passa a seguir
+    as regras do anunciante.
+  </p>
+
+  <h2>6. Premium (compra única)</h2>
+  <ul>
+    <li><strong>O que inclui</strong>: sem nenhum anúncio, todos os anéis,
+      temas e recursos do app, e o ícone e a logo dourados.</li>
+    <li><strong>Pagamento</strong>: uma vez só, pela Google Play, pelo preço
+      mostrado na loja no momento da compra. Não é assinatura e não há cobrança
+      recorrente.</li>
+    <li><strong>Conta Google</strong>: a compra fica ligada à conta Google usada
+      para comprar. Ao reinstalar o app ou trocar de celular, use "Restaurar
+      compra".</li>
+    <li><strong>Reembolso</strong>: pode ser pedido pela Google Play, conforme as
+      regras dela, ou pelo nosso contato. Respeitamos o direito de
+      arrependimento do Código de Defesa do Consumidor, de 7 dias a partir da
+      compra.</li>
+    <li><strong>"Para sempre"</strong>: o Premium vale enquanto o app for
+      oferecido e mantido. Os recursos podem evoluir com as atualizações, mas
+      quem comprou não volta a ver anúncios.</li>
+  </ul>
+
+  <h2>7. Teste grátis, Premium Lite e liberações por anúncio</h2>
+  <ul>
+    <li><strong>Teste grátis</strong>: 4 dias de Premium na primeira instalação,
+      uma vez por aparelho.</li>
+    <li><strong>Premium Lite e liberações por anúncio</strong> são recompensas
+      por assistir anúncios: não têm valor em dinheiro, não são vendidas, não
+      podem ser trocadas nem transferidas e não dão direito a reembolso.</li>
+    <li>Os prazos acabam às 4h da manhã seguinte ao último dia, para ninguém
+      perder o benefício no meio do uso.</li>
+    <li>Essas recompensas ficam guardadas no aparelho e podem se perder ao
+      limpar os dados do app ou desinstalá-lo, se não houver backup do Google.</li>
+    <li>Podemos mudar quantidades e prazos para o futuro, sem tirar o que você
+      já ganhou.</li>
+  </ul>
+
+  <h2>8. Premium de presente</h2>
+  <p>
+    Quem instalou o app antes da versão 2.6.0 ganhou o Premium sem custo, como
+    agradecimento. O presente fica ligado ao aparelho, pela data de instalação e
+    pelo backup do Google. Se você perder o presente (por exemplo, ao trocar de
+    celular sem restaurar o backup), fale conosco que ajudamos a recuperar.
+  </p>
+
+  <h2>9. Atualizações e disponibilidade</h2>
+  <p>
+    Podemos atualizar o app, mudar ou retirar funções e encerrar a oferta do
+    app, avisando com antecedência sempre que possível. O app depende do
+    Android e dos serviços do Google Play, e pode não funcionar igual em todos
+    os aparelhos.
+  </p>
+
+  <h2>10. Responsabilidade</h2>
+  <p>
+    Fazemos o possível para o app funcionar bem, mas, na medida permitida pela
+    lei, não respondemos por: perda de arquivos causada por fatores fora do app;
+    conteúdo de terceiros (anúncios e os seus próprios arquivos); falhas do
+    aparelho, do Android ou dos serviços do Google; e tarifas de dados da sua
+    operadora. Nada nestes termos limita os direitos que o Código de Defesa do
+    Consumidor garante a você.
+  </p>
+
+  <h2>11. Encerramento</h2>
+  <p>
+    Você pode parar de usar o app quando quiser, desinstalando-o. Podemos
+    bloquear o uso de versões modificadas ou de quem burlar as regras destes
+    termos.
+  </p>
+
+  <h2>12. Lei aplicável e foro</h2>
+  <p>
+    Estes termos seguem as leis do Brasil. Qualquer disputa será resolvida no
+    foro do seu domicílio, como garante o Código de Defesa do Consumidor.
+  </p>
+
+  <h2>13. Alterações destes termos</h2>
+  <p>
+    Se estes termos mudarem, a data no topo desta página será atualizada.
+    Mudanças importantes também serão avisadas dentro do app antes de valerem.
+    Continuar usando o app depois disso significa concordar com a nova versão.
+  </p>
+
+  <div class="contact">
+    <h2>Contato</h2>
+    <p>Dúvidas sobre estes termos, reembolsos ou sobre o app:</p>
+    <a href="mailto:constplayer.suporte@gmail.com">constplayer.suporte@gmail.com</a>
+  </div>
+</div>
+</body>
+</html>

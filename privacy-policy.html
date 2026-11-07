@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade do Const Player</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfbfd;
+    --surface: #f2f4fa;
+    --border: #dfe3ee;
+    --fg: #1c1e26;
+    --subtle: #565b6b;
+    --accent: #2f6bff;
+    --accent-fg: #ffffff;
+    --code-bg: #e8ecf7;
+    --code-fg: #263159;
+    --mark-bg: #fff1b8;
+    --mark-fg: #4a3a00;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14151b;
+      --surface: #1b1d26;
+      --border: #2b2e3b;
+      --fg: #eceef4;
+      --subtle: #a4a9ba;
+      --accent: #7ea2ff;
+      --accent-fg: #10131c;
+      --code-bg: #232739;
+      --code-fg: #c3cdf5;
+      --mark-bg: #4a3d0c;
+      --mark-fg: #ffe9a3;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14151b;
+    --surface: #1b1d26;
+    --border: #2b2e3b;
+    --fg: #eceef4;
+    --subtle: #a4a9ba;
+    --accent: #7ea2ff;
+    --accent-fg: #10131c;
+    --code-bg: #232739;
+    --code-fg: #c3cdf5;
+    --mark-bg: #4a3d0c;
+    --mark-fg: #ffe9a3;
+    color-scheme: dark;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding-block: 56px 96px;
+    padding-left: max(24px, env(safe-area-inset-left, 0px));
+    padding-right: max(24px, env(safe-area-inset-right, 0px));
+  }
+
+  .eyebrow {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    text-wrap: balance;
+    margin: 0 0 8px;
+  }
+
+  .updated {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    color: var(--subtle);
+    font-size: 13px;
+    margin: 0 0 32px;
+  }
+
+  .summary {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 22px;
+    font-size: 16px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .summary svg {
+    flex: none;
+    width: 22px;
+    height: 22px;
+    margin-top: 3px;
+    color: var(--accent);
+  }
+
+  h2 {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: var(--subtle);
+    margin: 44px 0 14px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  p { margin: 0 0 14px; }
+
+  ul {
+    margin: 0 0 14px;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  li::marker { color: var(--accent); }
+
+  strong { font-weight: 600; }
+
+  a { color: var(--accent); }
+
+  code {
+    font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+    font-size: 0.85em;
+    background: var(--code-bg);
+    color: var(--code-fg);
+    padding: 0.12em 0.4em;
+    border-radius: 5px;
+  }
+
+  /* O que ainda falta preencher antes de publicar. */
+  mark {
+    background: var(--mark-bg);
+    color: var(--mark-fg);
+    padding: 0.05em 0.3em;
+    border-radius: 4px;
+  }
+
+  .contact {
+    margin-top: 48px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+  }
+  .contact h2 { margin-top: 0; border-bottom: none; padding-bottom: 0; }
+  .contact a {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .contact a:hover { text-decoration: underline; }
+</style>
+
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">Const Player</p>
+  <h1>Política de Privacidade</h1>
+  <p class="updated">Última atualização: 4 de novembro de 2026</p>
+
+  <div class="summary">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 10 4.6-1.3 8-5 8-10V5z"/><path d="m9 12 2 2 4-4"/></svg>
+    <p style="margin:0">
+      Resumindo: suas músicas, playlists e preferências ficam só no seu
+      celular. Nós não temos servidor nem conta de usuário, então não recebemos
+      nada disso. A versão grátis mostra anúncios do Google AdMob, e o Google
+      coleta alguns dados técnicos para isso, como o ID de publicidade do
+      aparelho. A compra do Premium é feita e processada pela Google Play.
+      Até a versão 2.5, o app não usa a internet nem mostra anúncios: as partes
+      sobre anúncios e sobre a compra valem a partir da versão 2.6.0.
+    </p>
+  </div>
+
+  <h2>Quem é o responsável</h2>
+  <p>
+    O Const Player é desenvolvido e mantido por um desenvolvedor independente,
+    pessoa física, identificado como desenvolvedor na página do app na Google
+    Play. Ele é o controlador dos dados tratados pelo app, nos termos da Lei
+    Geral de Proteção de Dados (LGPD, Lei nº 13.709/2018). Para qualquer assunto
+    de privacidade, use o contato no fim desta página.
+  </p>
+
+  <h2>O que fica só no seu aparelho</h2>
+  <p>Tudo isto é guardado dentro do app, no seu celular, e não é enviado para nós:</p>
+  <ul>
+    <li><strong>Músicas e vídeos</strong>: o app lê os arquivos que já estão no
+      aparelho só para tocá-los. Nenhum arquivo, nome de música ou dado deles
+      sai do celular.</li>
+    <li><strong>Playlists, favoritos, histórico e a Retrospectiva</strong> (o
+      tempo que você ouviu cada música).</li>
+    <li><strong>Preferências</strong>: tema, idioma, equalizador, aparência do
+      player, pastas escolhidas e removidas.</li>
+    <li><strong>Capas, letras e nomes</strong> que você coloca ou edita.</li>
+    <li><strong>Músicas criadas a partir de vídeos</strong>, salvas na pasta de
+      músicas do próprio aparelho.</li>
+    <li><strong>Seu Premium</strong>: o teste grátis, o Premium Lite, os itens
+      liberados por anúncio e o progresso dos anúncios assistidos.</li>
+  </ul>
+
+  <h2>Permissões que o app pede</h2>
+  <ul>
+    <li><strong>Músicas e vídeos</strong> (<code>READ_MEDIA_AUDIO</code>,
+      <code>READ_MEDIA_VIDEO</code>): para encontrar e tocar os seus arquivos.</li>
+    <li><strong>Notificações</strong>: para os controles de reprodução, inclusive
+      na tela de bloqueio, os lembretes diários e o aviso de música ou vídeo
+      novo no aparelho.</li>
+    <li><strong>Tocar em segundo plano</strong>: para a música continuar com a
+      tela apagada ou em outro app.</li>
+    <li><strong>Iniciar ao ligar o celular</strong>: só para remarcar os
+      lembretes depois de reiniciar.</li>
+    <li><strong>Ajustes de áudio</strong>: para o equalizador e o reforço de
+      volume.</li>
+    <li><strong>Internet</strong>: usada só pelos anúncios e pelos serviços do
+      Google Play, como a compra do Premium. O app não envia as suas músicas
+      nem os seus dados de uso para a internet.</li>
+    <li><strong>ID de publicidade</strong>: usado pelo SDK de anúncios do
+      Google, como explicado abaixo.</li>
+  </ul>
+
+  <h2>Anúncios (versão grátis e Premium Lite)</h2>
+  <p>
+    Para manter o app grátis, mostramos anúncios com o <strong>Google
+    AdMob</strong>, o serviço de anúncios do Google. Quem coleta os dados dos
+    anúncios é o Google, não nós. O SDK do AdMob coleta e envia ao Google:
+  </p>
+  <ul>
+    <li>o ID de publicidade do Android e outros identificadores do aparelho;</li>
+    <li>o endereço IP, do qual sai uma localização aproximada (cidade ou
+      região, nunca o GPS);</li>
+    <li>informações técnicas do aparelho e do app (modelo, versão do Android,
+      idioma);</li>
+    <li>como você interage com os anúncios (quais foram vistos e tocados);</li>
+    <li>dados de diagnóstico e desempenho.</li>
+  </ul>
+  <p>
+    O Google usa esses dados para escolher e mostrar os anúncios, medir os
+    resultados, evitar repetições e prevenir fraudes. Onde a lei exige (como no
+    Espaço Econômico Europeu, no Reino Unido e em alguns estados dos Estados
+    Unidos), o app pede o seu consentimento antes de mostrar anúncios
+    personalizados, e você pode mudar a sua escolha em
+    <strong>Configurações → Opções de privacidade</strong>. Em qualquer país,
+    você pode apagar ou trocar o ID de publicidade nas configurações do
+    Android, e assim deixar de receber anúncios baseados nos seus interesses.
+  </p>
+  <p>
+    Para saber mais, veja
+    <a href="https://policies.google.com/technologies/partner-sites">como o
+    Google usa os dados de apps parceiros</a> e a
+    <a href="https://policies.google.com/privacy">Política de Privacidade do
+    Google</a>. Quem tem o Premium não vê anúncios, e durante o teste grátis
+    também não.
+  </p>
+
+  <h2>Compra do Premium</h2>
+  <p>
+    O Premium é comprado pela <strong>Google Play</strong>. O pagamento e os
+    dados da sua forma de pagamento ficam com o Google: nós não recebemos o
+    número do cartão nem outros dados de pagamento. O app recebe da Google
+    Play só a confirmação da compra (qual produto foi comprado e um código
+    assinado pelo Google), que é conferida no próprio aparelho para liberar o
+    Premium e para o botão "Restaurar compra". Como em qualquer venda na Google
+    Play, recebemos do Google as informações do pedido de que precisamos para
+    atender a reembolsos e pedidos de suporte.
+  </p>
+
+  <h2>Backup do Google</h2>
+  <p>
+    Se o backup do Google estiver ligado no seu aparelho, o Android pode guardar
+    as preferências e o progresso do app na sua conta Google e devolvê-los
+    quando você reinstalar o app ou trocar de celular. O app também guarda, no
+    armazenamento protegido do Google Play Services, uma marca de que o
+    aparelho tem direito ao Premium de presente, para que ele não se perca ao
+    desinstalar. Esses backups são feitos e protegidos pelo Google; nós não
+    temos acesso a eles, e a marca do presente não contém dados pessoais.
+  </p>
+
+  <h2>Relatório de diagnóstico (opcional)</h2>
+  <p>
+    Nas configurações, você pode gerar um relatório técnico para nos ajudar a
+    corrigir problemas: modelo do aparelho, versão do Android, memória,
+    desempenho, saída de áudio, quantidade de músicas e vídeos e o motivo de a
+    música ter parado. O relatório não tem nomes de músicas, arquivos,
+    contatos nem outros dados pessoais, e só sai do aparelho se você escolher
+    um app para enviá-lo. Usamos o que recebemos apenas para corrigir o
+    problema e apagamos quando não for mais necessário.
+  </p>
+
+  <h2>Com quem os dados são compartilhados</h2>
+  <p>
+    Não vendemos dados. Os únicos terceiros que recebem dados por meio do app
+    são o Google (AdMob, Google Play e backup), como descrito acima. Também
+    podemos informar dados que tivermos, se uma autoridade competente exigir
+    por lei.
+  </p>
+
+  <h2>Transferência internacional</h2>
+  <p>
+    O Google pode tratar os dados descritos aqui em servidores fora do Brasil,
+    com as garantias previstas na política de privacidade dele.
+  </p>
+
+  <h2>Bases legais (LGPD)</h2>
+  <ul>
+    <li><strong>Execução de contrato</strong> (art. 7º, V): fazer o app
+      funcionar e liberar o Premium que você comprou.</li>
+    <li><strong>Legítimo interesse</strong> (art. 7º, IX): mostrar anúncios não
+      personalizados, medir os anúncios e prevenir fraudes, para manter o app
+      grátis.</li>
+    <li><strong>Consentimento</strong> (art. 7º, I): anúncios personalizados
+      onde a lei pede consentimento, e o relatório de diagnóstico que você
+      decide enviar.</li>
+  </ul>
+
+  <h2>Seus direitos</h2>
+  <p>
+    Pela LGPD, você pode pedir: confirmação de que tratamos dados seus, acesso,
+    correção, anonimização, bloqueio ou eliminação, portabilidade, informação
+    sobre com quem compartilhamos, revogação do consentimento e oposição a um
+    tratamento. Você também pode reclamar à Autoridade Nacional de Proteção de
+    Dados (ANPD).
+  </p>
+  <ul>
+    <li>Os dados que ficam no aparelho estão sob o seu controle: dá para apagar
+      playlists e histórico no app, limpar os dados do app ou desinstalá-lo.</li>
+    <li>Os dados dos anúncios ficam com o Google: use os controles do Android e
+      da sua conta Google (ID de publicidade e personalização de anúncios).</li>
+    <li>Para o que estiver conosco, como e-mails e relatórios que você nos
+      mandou, escreva para o contato abaixo. Respondemos em até 15 dias.</li>
+  </ul>
+
+  <h2>Por quanto tempo</h2>
+  <ul>
+    <li>Dados no aparelho: até você apagar, limpar os dados do app ou
+      desinstalar.</li>
+    <li>Dados coletados pelo Google: pelos prazos da política do Google.</li>
+    <li>E-mails e relatórios enviados a nós: só pelo tempo necessário para
+      resolver o seu pedido.</li>
+  </ul>
+
+  <h2>Crianças</h2>
+  <p>
+    O Const Player não é direcionado a crianças menores de 13 anos e não coleta
+    conscientemente dados delas. Se você souber de algum caso, fale conosco.
+  </p>
+
+  <h2>Segurança</h2>
+  <p>
+    Os dados no aparelho ficam na área privada do app, protegida pelo Android.
+    As comunicações dos serviços do Google usam conexão criptografada.
+  </p>
+
+  <h2>Alterações a esta política</h2>
+  <p>
+    Se esta política mudar, a data no topo desta página será atualizada. Mudanças
+    importantes também serão avisadas dentro do app antes de valerem.
+  </p>
+
+  <div class="contact">
+    <h2>Contato</h2>
+    <p>Dúvidas sobre privacidade, pedidos sobre os seus dados ou sobre o app:</p>
+    <a href="mailto:constplayer.suporte@gmail.com">constplayer.suporte@gmail.com</a>
+    <p style="margin:14px 0 0">Veja também os <a href="terms-of-use.html">Termos de Uso</a>.</p>
+  </div>
+</div>
+</body>
+</html>

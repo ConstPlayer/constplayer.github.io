@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Const Player</title>
+<meta name="description" content="Const Player: tocador de músicas e vídeos para Android, com anéis que dançam com a música e temas animados.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #fbfbfd;
+    --surface: #f2f4fa;
+    --border: #dfe3ee;
+    --fg: #1c1e26;
+    --subtle: #565b6b;
+    --accent: #2f6bff;
+    --accent-fg: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #14151b;
+      --surface: #1b1d26;
+      --border: #2b2e3b;
+      --fg: #eceef4;
+      --subtle: #a4a9ba;
+      --accent: #7ea2ff;
+      --accent-fg: #10131c;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #14151b;
+    --surface: #1b1d26;
+    --border: #2b2e3b;
+    --fg: #eceef4;
+    --subtle: #a4a9ba;
+    --accent: #7ea2ff;
+    --accent-fg: #10131c;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Source Serif 4", Georgia, "Times New Roman", serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .page {
+    max-width: 660px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+  }
+
+  .eyebrow {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 10px;
+  }
+
+  h1 {
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+  }
+
+  .lead { font-size: 19px; color: var(--subtle); margin: 0 0 28px; }
+
+  .cta {
+    display: inline-block;
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    background: var(--accent);
+    color: var(--accent-fg);
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 999px;
+  }
+  .cta:hover { filter: brightness(1.08); }
+
+  ul {
+    margin: 36px 0 0;
+    padding-left: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  li::marker { color: var(--accent); }
+
+  .links {
+    margin-top: 48px;
+    padding: 22px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    font-family: "Manrope", "Segoe UI", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .links a {
+    color: var(--accent);
+    font-weight: 700;
+    text-decoration: none;
+  }
+  .links a:hover { text-decoration: underline; }
+  .links span { color: var(--subtle); font-size: 14px; }
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="eyebrow">Android</p>
+  <h1>Const Player</h1>
+  <p class="lead">
+    O tocador para as músicas e os vídeos que já estão no seu celular, com
+    anéis que dançam com a música, temas animados e equalizador.
+  </p>
+  <a class="cta" href="https://play.google.com/store/apps/details?id=com.constplayer.const_player">Baixar na Google Play</a>
+
+  <ul>
+    <li>Toca os seus arquivos, sem cadastro e sem conta.</li>
+    <li>Playlists, favoritos, letras e a Retrospectiva do que você mais ouve.</li>
+    <li>Widget na tela inicial, popup de vídeo e reforço de volume.</li>
+  </ul>
+
+  <div class="links">
+    <a href="privacy-policy.html">Política de Privacidade</a>
+    <a href="terms-of-use.html">Termos de Uso</a>
+    <span>Suporte: <a href="mailto:constplayer.suporte@gmail.com">constplayer.suporte@gmail.com</a></span>
+  </div>
+</div>
+</body>
+</html>
