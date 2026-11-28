@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Baixar o Const Player</title>
+<meta name="robots" content="noindex">
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #05060b; color: #fff;
+         font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; text-align: center; }
+  main { padding: 28px 22px; max-width: 420px; }
+  img { width: 92px; height: 92px; border-radius: 22px; }
+  h1 { font-size: 24px; margin: 16px 0 6px; }
+  p { color: #b8bdcc; line-height: 1.5; margin: 0 0 22px; }
+  a.botao { display: inline-block; background: #fff; color: #000; font-weight: 800; text-decoration: none;
+            padding: 15px 28px; border-radius: 999px; font-size: 17px; }
+  small { display: block; margin-top: 22px; color: #8a90a2; line-height: 1.5; }
+</style>
+<script>
+!function (w, d, t) {
+  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(
+var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};n=document.createElement("script")
+;n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(n,e)};
+
+
+  ttq.load('DC3F52BC77UCAR1O2TLG');
+  ttq.page();
+}(window, document, 'ttq');
+</script>
+</head>
+<body>
+<main>
+  <img src="/icon.png" alt="" onerror="this.style.display='none'">
+  <h1>Const Player</h1>
+  <p>O player das músicas salvas no seu celular, com um anel que dança na batida. Grátis na Play Store.</p>
+  <a class="botao" id="abrir" href="https://play.google.com/store/apps/details?id=com.constplayer.const_player">Abrir na Play Store</a>
+  <small id="dica">Se não abrir, toque em ⋮ (no canto de cima) e em “Abrir no navegador”.</small>
+</main>
+<script>
+// Dentro do app do TikTok a Play Store abre como pagina da web, que pede login
+// e mais um toque. Aqui o link pede o app da Play Store direto (intent:) e,
+// se o celular nao deixar, cai na pagina normal. A origem (utm) vai junto no
+// referrer, para a Play Console contar de onde veio a instalacao.
+(function () {
+  var app = 'com.constplayer.const_player';
+  var q = new URLSearchParams(location.search);
+  var ref = [];
+  ['utm_source', 'utm_medium', 'utm_campaign', 'utm_content'].forEach(function (k) {
+    if (q.get(k)) ref.push(k + '=' + encodeURIComponent(q.get(k)));
+  });
+  if (!q.get('utm_source')) ref.unshift('utm_source=site');
+  var referrer = encodeURIComponent(ref.join('&'));
+  var web = 'https://play.google.com/store/apps/details?id=' + app + '&referrer=' + referrer;
+  var intent = 'intent://details?id=' + app + '&referrer=' + referrer +
+    '#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=' +
+    encodeURIComponent(web) + ';end';
+  var android = /Android/i.test(navigator.userAgent);
+  var botao = document.getElementById('abrir');
+  botao.href = android ? intent : web;
+  botao.addEventListener('click', function () {
+    try { ttq.track('ClickButton', { content_name: 'abrir_play' }); } catch (e) {}
+  });
+  if (android) setTimeout(function () { location.href = intent; }, 300);
+})();
+</script>
+</body>
+</html>
